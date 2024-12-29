@@ -6,3 +6,6 @@
 > uvicorn api:app --reload
 > streamlit run app.py
 ```
+
+# Running App ScreenShot
+![alt text](image.png)
