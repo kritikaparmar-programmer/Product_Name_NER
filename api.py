@@ -12,11 +12,11 @@ app = FastAPI(title="Product NER API")
 
 # Load the trained model
 try:
-    nlp = spacy.load("models/product_ner_model")
+    nlp = spacy.load("models/Product_Name_NER_Model")
     logger.info("Successfully loaded NER model")
 except Exception as e:
     logger.error(f"Failed to load model: {str(e)}")
-    raise RuntimeError("Model not found. Please ensure the model is trained and saved in models/product_ner_model")
+    raise RuntimeError("Model not found. Please ensure the model is trained and saved in models/Product_Name_NER_Model")
 
 def preprocess_text(text: str) -> str:
     """Preprocess text similar to what we did while training"""
